@@ -1,0 +1,157 @@
+.{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f4f6f8;
+  color: #333;
+}
+
+header {
+  background: #202049;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+nav input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+.cart-count {
+  background: crimson;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 10px;
+  position: absolute;
+  top: -8px;
+  right: -10px;
+}
+
+.banner {
+  background: url('https://via.placeholder.com/1200x400') no-repeat center/cover;
+  padding: 60px;
+  text-align: center;
+  color: #fff;
+  background-color: #222;
+}
+
+.banner h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  padding: 12px 28px;
+  background: #e94560;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #d73350;
+}
+
+.filters {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px;
+}
+
+.filters select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.product-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.product-card p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.product-card button {
+  padding: 8px 20px;
+  background: #1a1a2e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.product-card button:hover {
+  background: #0f0f1f;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1a1a2e;
+  color: #fff;
+  margin-top: 40px;
+}
